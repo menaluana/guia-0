@@ -1,0 +1,171 @@
+import java.util.Scanner;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+    public static void main(String[] args) {
+        // Press Alt+Intro with your caret at the highlighted text to see how
+        // IntelliJ IDEA suggests fixing it.
+        /*int numN = 999;
+        double numA = 6.888;
+        char numC = 's';
+        double suma;
+        suma = numN + numA;
+        double resta;
+        resta = numA - numN;
+
+        System.out.println(numN);
+        System.out.println(numA);
+        System.out.println(numC);
+        System.out.println(suma);
+        System.out.println(resta);
+        System.out.println((int)(numC)); */
+
+        /*int numX = 4;
+        int numY = 2;
+        double numM = 3.14;
+        double numN = 7.54;
+        operaciones(numX, numY, numM, numN);
+        controlUsuario();*/
+
+        /*int A = 1;
+        int B = 2;
+        int C = 3;
+        int D = 4;
+
+        A = D;
+        B = C;
+        C = A;
+        D = B;
+        System.out.println(A);
+        System.out.println(B);
+        System.out.println(C);
+        System.out.println(D);*/
+
+   /* int num1 = 6;
+
+    if(num1 % 2 == 0)
+    {
+      System.out.println("Numero par");
+    }
+    else{
+        System.out.println("Numero impar");
+    }
+*/
+  //  numeroPoN();
+        //metodo7();
+        //metodo8();
+        metodo9();
+
+
+    }
+    public static void operaciones(int numX, int numY, double numN, double numM) {
+        double suma = numM + numX;
+        double resta = numN - numY;
+        double multiplicacion = numX * numY;
+        double division = numX / numN;
+
+        System.out.println(suma);
+        System.out.println(resta);
+        System.out.println(multiplicacion);
+        System.out.println(division);
+
+    }
+    public static void controlUsuario ()
+    {
+        Scanner numero = new Scanner(System.in);
+        System.out.println("Ingrese un numero: ");
+        int N = numero.nextInt();
+        numero.nextLine(); //ASEGURA EL "ENTER"
+
+        int suma = N + 77;
+                int resta = N - 3;
+        int duplica = N * 2;
+                System.out.println("El numero incrementado 77: "+ suma);
+        System.out.println("El numero menos 3: "+ resta);
+        System.out.println("El numero por 2: "+ duplica);
+
+
+
+
+
+    }
+
+    public static void numeroPoN()
+    {
+        Scanner positivoOnegativo = new Scanner(System.in);
+        System.out.println("Ingrese un numero: ");
+        int B = positivoOnegativo.nextInt();
+        positivoOnegativo.nextLine();
+
+        if (B < 0)
+        {
+            System.out.println("El numero es negativo");
+
+        } else {
+            System.out.println("El numero es positivo");
+        }
+    }
+
+    public static void metodo7()
+    {
+        Scanner caracter = new Scanner(System.in);
+        System.out.println("Ingrese una palabra: ");
+        //Scanner.next().charAt(0);
+        char letras = caracter.nextLine().charAt(0);
+
+        System.out.println((int)(letras));
+
+
+    }
+
+    public static void metodo8()
+    {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Ingrese un numero");
+        int C = scan.nextInt();
+        scan.nextLine();
+
+        if(C < 0)
+        {
+            System.out.println("El numero es negativo");
+        } else {
+            System.out.println("El numero es positivo");
+        }
+        if (C % 2 == 0)
+        {
+            System.out.println("El numero es par");
+        } else {
+            System.out.println("El numero es impar");
+        }
+        if (C % 5 == 0)
+        {
+            System.out.println("El numero es MULTIPLO DE 5");
+        } else {
+            System.out.println("El numero no es multiplo de 5");
+        }
+        if (C % 10 == 0)
+        {
+            System.out.println("El numero es MULTIPLO DE 10");
+        } else {
+            System.out.println("El numero no es multiplo de 10");
+        }
+        if (C > 100)
+        {
+            System.out.println("El numero es mayor a 100");
+        } else
+        {
+            System.out.println("El numero es menor a 100");
+        }
+    }
+
+    public static void metodo9()
+    {
+        Scanner palabra = new Scanner(System.in);
+        System.out.println("Ingrese una nombre: ");
+        String letras = palabra.nextLine();
+
+        System.out.println("BUENOS DIAS "+ letras);
+    }
+
+}
